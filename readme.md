@@ -12,6 +12,10 @@
 
 Maintained by [Zander Martineau](https://github.com/mrmartineau)
 
+```sh
+npm install @nimbletank/react-components --save
+```
+
 ## Features
 * [Jest](https://facebook.github.io/jest/) unit tests with [Enzyme](https://github.com/airbnb/enzyme)
 * [Prettier](https://github.com/prettier/prettier) formatting

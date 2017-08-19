@@ -3,9 +3,9 @@
 
 ## Usage
 ```js
-import {Element} from 'nimbletank-components'
+import {Element} from '@nimbletank/react-components'
 // or
-import Element from 'nimbletank-components/components/Element'
+import Element from '@nimbletank/react-components/components/Element'
 ```
 
 ```jsx
