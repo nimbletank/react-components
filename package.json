@@ -1,0 +1,52 @@
+{
+  "name": "@nimbletank/react-components",
+  "version": "0.0.0",
+  "description": "Components used in web projects at Nimbletank",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format:js": "prettier-standard 'components/**/*.js'",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "linters": {
+      "(components|.storybook)/**/*.js": [
+        "prettier-standard",
+        "test",
+        "git add"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nimbletank/react-components"
+  },
+  "keywords": [
+    "react",
+    "react.js",
+    "components"
+  ],
+  "author": "Zander Martineau",
+  "license": "MIT",
+  "dependencies": {
+    "classnames": "^2.2.5"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.2.0",
+    "@storybook/addon-info": "^3.2.5",
+    "@storybook/addon-knobs": "^3.2.5",
+    "@storybook/addon-options": "^3.2.4",
+    "@storybook/react": "^3.2.5",
+    "enzyme": "^2.9.1",
+    "enzyme-to-json": "^1.5.1",
+    "eslint": "^4.5.0",
+    "husky": "^0.14.3",
+    "jest": "^20.0.4",
+    "lint-staged": "^4.0.3",
+    "prettier": "^1.5.3",
+    "prettier-standard": "^6.0.0",
+    "react-test-renderer": "^15.6.1",
+    "storybook-addon-jsx": "4.1.1",
+    "storybook-readme": "3.0.6"
+  }
+}
