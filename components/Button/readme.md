@@ -5,7 +5,7 @@
 ```js
 import {Button} from '@nimbletank/react-components'
 // or
-import Button from '@nimbletank/react-components/components/Button'
+import Button from '@nimbletank/react-components/dist/Button'
 ```
 
 ### Additional boolean attributes allow for other specific classes to be added:

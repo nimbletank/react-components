@@ -4,9 +4,9 @@
  * e.g. `<button>` / `<a>`
  *
  *
- * import {Button} from 'nimbletank-components'
+ * import {Button} from '@nimbletank/react-components'
  *  or
- * import Button from 'nimbletank-components/components/Button'
+ * import Button from '@nimbletank/react-components/dist/Button'
  *
  *
  * Additional boolean attributes allow for other specific classes to be added:

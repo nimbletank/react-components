@@ -3,9 +3,9 @@
  * Generic container component that wraps other content
  *
  *
- * import {Container} from 'nimbletank-components'
+ * import {Container} from '@nimbletank/react-components'
  *  or
- * import Container from 'nimbletank-components/components/Container'
+ * import Container from '@nimbletank/react-components/dist/Container'
  *
  *
  * Additional boolean attributes to allow for other specific classes to be added:

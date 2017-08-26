@@ -14,7 +14,23 @@ Maintained by [Zander Martineau](https://github.com/mrmartineau)
 
 ```sh
 npm install @nimbletank/react-components --save
+
+yarn add @nimbletank/react-components
 ```
+
+## Available components
+* [Button](components/Button) - `import {Button} from 'nimbletank-components'`
+* [Container](components/Container) - `import {Container} from 'nimbletank-components'`
+* [Heading](components/Heading) - `import {Heading} from 'nimbletank-components'`
+ * [H1](components/Heading) - `import {H1} from 'nimbletank-components'`
+ * [H2](components/Heading) - `import {H2} from 'nimbletank-components'`
+ * [H3](components/Heading) - `import {H3} from 'nimbletank-components'`
+ * [H4](components/Heading) - `import {H4} from 'nimbletank-components'`
+ * [H5](components/Heading) - `import {H5} from 'nimbletank-components'`
+ * [H6](components/Heading) - `import {H6} from 'nimbletank-components'`
+ * [Title](components/Heading) - `import {Title} from 'nimbletank-components'`
+ * [Subtitle](components/Heading) - `import {Subtitle} from 'nimbletank-components'`
+
 
 ## Features
 * [Jest](https://facebook.github.io/jest/) unit tests with [Enzyme](https://github.com/airbnb/enzyme)

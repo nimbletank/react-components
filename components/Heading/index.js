@@ -5,7 +5,7 @@
  *
  * import {Heading} from '@nimbletank/react-components'
  *  or
- * import Heading from '@nimbletank/react-components/components/Heading'
+ * import Heading from '@nimbletank/react-components/dist/Heading'
  *
  *
  * @param {integer} type the heading tag you are using. from 1-6

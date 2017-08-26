@@ -5,7 +5,7 @@
 ```js
 import {Element} from '@nimbletank/react-components'
 // or
-import Element from '@nimbletank/react-components/components/Element'
+import Element from '@nimbletank/react-components/dist/Element'
 ```
 
 ```jsx
