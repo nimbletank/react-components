@@ -20,7 +20,6 @@
  * Other classes can be added if the `className` attribute is used
  */
 
-
 import React from 'react'
 import Element from '../Element'
 import classNames from 'classnames'
@@ -35,7 +34,6 @@ const Heading = ({ type = 1, ...rest }) => {
 }
 
 export default Heading
-
 
 /**
  * Individual heading components
