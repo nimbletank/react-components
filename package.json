@@ -1,9 +1,10 @@
 {
   "name": "@nimbletank/react-components",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Components used in web projects at Nimbletank",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "babel components -d dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format:js": "prettier-standard 'components/**/*.js'",
     "precommit": "lint-staged"
@@ -37,6 +38,11 @@
     "@storybook/addon-knobs": "^3.2.5",
     "@storybook/addon-options": "^3.2.4",
     "@storybook/react": "^3.2.5",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
     "enzyme": "^2.9.1",
     "enzyme-to-json": "^1.5.1",
     "eslint": "^4.5.0",
