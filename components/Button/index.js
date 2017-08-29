@@ -28,27 +28,46 @@
  * `.Button--primary`
  * `.Button--secondary`
  * `.Button--link`
+ * `.Button--block`
  *
  * Other classes can be added if the `className` attribute is used
  */
 
 import React from 'react'
 import Element from '../Element'
-import classNames from 'classnames'
+import classNames from 'classnames/bind'
+import styles from './styles.css'
+let cx = classNames.bind(styles)
 
-const Button = ({ tag = 'button', primary, secondary, link, ...rest }) => {
-  const classes = classNames(
+const Button = ({
+  tag = 'button',
+  primary,
+  secondary,
+  link,
+  block,
+  thinking,
+  ...rest
+}) => {
+  const classes = cx(
     'Button',
     {
       'Button--primary': primary,
       'Button--secondary': secondary,
-      'Button--link': link
+      'Button--link': link,
+      'Button--block': block,
+      'Button--isThinking': thinking,
     },
     rest.className
   )
 
   return (
-    <Element tag={tag} className={classes} children={rest.children} {...rest} />
+    <Element
+      tag={tag}
+      type='button'
+      className={classes}
+      children={rest.children}
+      {...rest}
+    />
   )
 }
 

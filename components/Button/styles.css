@@ -1,0 +1,113 @@
+/**
+ * Buttons
+ * =================================
+ */
+.Button {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-family: inherit;
+  font-size: 100%;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 2.5;
+  height: 2.5em;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  overflow: visible;
+  text-align: center;
+  border-radius: 5px;
+  user-select: none;
+  background-color: blue; /* Var */
+  text-decoration: none;
+}
+
+.Button,
+.Button:link,
+.Button:visited {
+  color: #fff; /* Var */
+}
+
+.Button:hover,
+.Button:active,
+.Button:focus {
+  background-color: navy; /* Var */
+}
+
+.Button:active,
+.Button:focus {
+  outline: none;
+}
+
+/**
+ * Disabled state
+ */
+.Button.disabled,
+.Button[disabled] {
+  cursor: default;
+  background-image: none;
+  opacity: .5;
+}
+
+/**
+ * Button--primary
+ */
+.Button--primary,
+.Button--primary:link,
+.Button--primary:visited {
+  background-color: greenyellow; /* Var */
+  color: #fff; /* Var */
+}
+
+.Button--primary:hover,
+.Button--primary:active,
+.Button--primary:focus {
+  background-color: green; /* Var */
+}
+
+/**
+ * Button--block
+ */
+.Button--block {
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Vertically space out multiple block buttons
+ * same as .Button--block + .Button--block
+ */
+.Button--block + .Button--block {
+  margin-top: 10px; /* Var */
+}
+
+input[type="submit"].Button--block,
+input[type="reset"].Button--block,
+input[type="button"].Button--block {
+  width: 100%;
+}
+
+/**
+ * Button--block
+ */
+.Button--link,
+.Button--link:link,
+.Button--link:visited {
+  background-color: transparent;
+  color: inherit;
+}
+
+.Button--link:hover,
+.Button--link:active,
+.Button--link:focus {
+  background-color: transparent;
+  color: blue; /* Var */
+}
+
+.Button--isThinking::after {
+  content: '...';
+}
