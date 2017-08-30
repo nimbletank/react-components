@@ -6,9 +6,9 @@
   "scripts": {
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format:js": "prettier-standard 'components/**/*.js'",
+    "format:js": "prettier-standard 'components/**/*.js' '.storybook/**/*.js'",
     "precommit": "lint-staged",
-    "postinstall": "npm run build"
+    "postinstall": "npm run build",
     "storybook:run": "BABEL_ENV=test start-storybook -p 9001 -c .storybook"
   },
   "lint-staged": {
@@ -47,15 +47,15 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
-    "css-loader": "^0.28.5",
+    "css-loader": "^0.28.6",
     "enzyme": "^2.9.1",
     "enzyme-to-json": "^1.5.1",
     "eslint": "^4.5.0",
     "husky": "^0.14.3",
     "jest": "^20.0.4",
-    "lint-staged": "^4.0.3",
-    "prettier": "^1.5.3",
+    "lint-staged": "^4.0.4",
     "postcss-loader": "^2.0.6",
+    "prettier": "^1.6.1",
     "prettier-standard": "^6.0.0",
     "raw-loader": "^0.5.1",
     "react-dom": "^15.6.1",
