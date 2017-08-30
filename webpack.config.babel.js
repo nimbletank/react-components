@@ -32,7 +32,7 @@ module.exports = {
             options: {
               importLoaders: 1,
               modules: true,
-              // localIdentName: '[local]___[hash:base64:5]',
+              localIdentName: '[local]_[hash:base64:5]'
             }
           },
           'postcss-loader'
