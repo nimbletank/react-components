@@ -1,7 +1,6 @@
 /**
  * Button component
- * Generic button component that allows the use of different tags,
- * e.g. `<button>` / `<a>`
+ * Generic button component
  *
  *
  * import {Button} from '@nimbletank/react-components'
@@ -12,7 +11,7 @@
  * Additional boolean attributes allow for other specific classes to be added:
  * `primary` > `.Button--primary`
  * `secondary` > `.Button--secondary`
- * `link` > `.Button--link`
+ * `block` > `.Button--block`
  *
  * @param {string} className - Additional class for the button
  * @param {func} onClick - onClick function for the button
@@ -27,7 +26,6 @@
  * `.Button`
  * `.Button--primary`
  * `.Button--secondary`
- * `.Button--link`
  * `.Button--block`
  *
  * Other classes can be added if the `className` attribute is used
@@ -41,9 +39,9 @@ let cx = classNames.bind(styles)
 
 const Button = ({
   tag = 'button',
+  type = 'button',
   primary,
   secondary,
-  link,
   block,
   thinking,
   ...rest
@@ -53,17 +51,16 @@ const Button = ({
     {
       'Button--primary': primary,
       'Button--secondary': secondary,
-      'Button--link': link,
       'Button--block': block,
       'Button--isThinking': thinking,
     },
-    rest.className
+    rest.className,
   )
 
   return (
     <Element
       tag={tag}
-      type='button'
+      type={type}
       className={classes}
       children={rest.children}
       {...rest}

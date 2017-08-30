@@ -1,5 +1,5 @@
 /**
- * Buttons
+ * Button
  * =================================
  */
 .Button {
@@ -21,31 +21,27 @@
   text-align: center;
   border-radius: 5px;
   user-select: none;
-  background-color: blue; /* Var */
   text-decoration: none;
+  transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 .Button,
 .Button:link,
 .Button:visited {
-  color: #fff; /* Var */
+  background-color: #EDEDED; /* Var */
+  color: #444;
 }
 
 .Button:hover,
 .Button:active,
 .Button:focus {
-  background-color: navy; /* Var */
-}
-
-.Button:active,
-.Button:focus {
+  background-color: #D5D5D5; /* Var */
   outline: none;
 }
 
 /**
  * Disabled state
  */
-.Button.disabled,
 .Button[disabled] {
   cursor: default;
   background-image: none;
@@ -58,14 +54,14 @@
 .Button--primary,
 .Button--primary:link,
 .Button--primary:visited {
-  background-color: greenyellow; /* Var */
+  background-color: #3FC1C9; /* Var */
   color: #fff; /* Var */
 }
 
 .Button--primary:hover,
 .Button--primary:active,
 .Button--primary:focus {
-  background-color: green; /* Var */
+  background-color: #2B8D93; /* Var */
 }
 
 /**
@@ -85,29 +81,9 @@
   margin-top: 10px; /* Var */
 }
 
-input[type="submit"].Button--block,
-input[type="reset"].Button--block,
-input[type="button"].Button--block {
-  width: 100%;
-}
-
 /**
- * Button--block
+ * Button--isThinking
  */
-.Button--link,
-.Button--link:link,
-.Button--link:visited {
-  background-color: transparent;
-  color: inherit;
-}
-
-.Button--link:hover,
-.Button--link:active,
-.Button--link:focus {
-  background-color: transparent;
-  color: blue; /* Var */
-}
-
 .Button--isThinking::after {
   content: '...';
 }

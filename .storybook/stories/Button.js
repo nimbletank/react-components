@@ -16,7 +16,7 @@ import Button from '../../components/Button'
 import ButtonReadMe from '../../components/Button/readme.md'
 
 setAddon(JSXAddon)
-const stories = storiesOf('Buttons', module)
+const stories = storiesOf('Button', module)
 stories.addDecorator(withKnobs)
 
 stories
@@ -56,27 +56,28 @@ stories
     ))
   )
   .addWithJSX(
-    'Link button',
-    withReadme(ButtonReadMe, () => (
-      <Button
-        link
-        href="https://nimbletank.com"
-        disabled={boolean('Disabled', false)}
-        thinking={boolean('Thinking', false)}
-      >
-        {text('Button text', 'Link Button')}
-      </Button>
-    ))
-  )
-  .addWithJSX(
     'Block button',
     withReadme(ButtonReadMe, () => (
       <Button
         block
+        primary
         disabled={boolean('Disabled', false)}
         thinking={boolean('Thinking', false)}
       >
         {text('Button text', 'Block Button')}
+      </Button>
+    ))
+  )
+  .addWithJSX(
+    'Link button',
+    withReadme(ButtonReadMe, () => (
+      <Button
+        tag="a"
+        disabled={boolean('Disabled', false)}
+        thinking={boolean('Thinking', false)}
+        href="https://nimbletank.com"
+      >
+        {text('Button text', 'Link button')}
       </Button>
     ))
   )
