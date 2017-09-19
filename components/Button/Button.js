@@ -28,8 +28,8 @@ import styled from 'react-emotion'
  * Shared button styles
  */
 const ButtonCSS = (props) => css`
-  display: ${props => props.block ? 'block' : 'inline-block'};
-  width: ${props => props.block ? '100%' : 'auto'};
+  display: ${props.block ? 'block' : 'inline-block'};
+  width: ${props.block ? '100%' : 'auto'};
   vertical-align: middle;
   white-space: nowrap;
   font-family: inherit;
