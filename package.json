@@ -32,7 +32,12 @@
   "author": "Zander Martineau",
   "license": "MIT",
   "dependencies": {
-    "classnames": "^2.2.5"
+    "babel-plugin-emotion": "^7.3.1",
+    "classnames": "^2.2.5",
+    "design-system-utils": "^0.0.1",
+    "emotion": "^7.3.1",
+    "react-emotion": "^7.3.1",
+    "styled-system": "^1.0.0-13"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.2.6",
