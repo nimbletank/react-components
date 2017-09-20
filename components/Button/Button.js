@@ -78,12 +78,12 @@ const ButtonStyles = css`
   }
 `
 
-export const Button = styled.button`
+export const Button = styled('button')`
   ${ButtonCSS};
   ${ButtonStyles};
 `
 
-export const ButtonLink = styled.a`
+export const ButtonLink = styled('a')`
   ${ButtonCSS};
   ${ButtonStyles};
 `
@@ -108,12 +108,12 @@ const ButtonPrimaryStyles = css`
   }
 `
 
-export const ButtonPrimary = styled.button`
+export const ButtonPrimary = styled('button')`
   ${ButtonCSS};
   ${ButtonPrimaryStyles};
 `
 
-export const ButtonPrimaryLink = styled.a`
+export const ButtonPrimaryLink = styled('a')`
   ${ButtonCSS};
   ${ButtonPrimaryStyles};
 `
