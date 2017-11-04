@@ -48,20 +48,20 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.6",
-    "enzyme": "^2.9.1",
-    "enzyme-to-json": "^1.5.1",
+    "enzyme": "^3.1.0",
+    "enzyme-to-json": "^3.2.1",
     "eslint": "^4.5.0",
     "husky": "^0.14.3",
-    "jest": "^20.0.4",
+    "jest": "^21.2.1",
     "lint-staged": "^4.0.4",
     "postcss-loader": "^2.0.6",
     "prettier": "^1.6.1",
-    "prettier-standard": "^6.0.0",
+    "prettier-standard": "^7.0.3",
     "raw-loader": "^0.5.1",
-    "react-dom": "^15.6.1",
-    "react-test-renderer": "^15.6.1",
-    "storybook-addon-jsx": "4.1.1",
+    "react-dom": "^16.0.0",
+    "react-test-renderer": "^16.0.0",
+    "storybook-addon-jsx": "5.0.0",
     "storybook-readme": "^3.0.6",
-    "style-loader": "^0.18.2"
+    "style-loader": "^0.19.0"
   }
 }
