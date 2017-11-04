@@ -19,6 +19,8 @@ yarn add @nimbletank/react-components
 ```
 
 ## Available components
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/nimbletank/react-components.svg)](https://greenkeeper.io/)
 * [Button](components/Button) - `import {Button} from 'nimbletank-components'`
 * [Container](components/Container) - `import {Container} from 'nimbletank-components'`
 * [Heading](components/Heading) - `import {Heading} from 'nimbletank-components'`
