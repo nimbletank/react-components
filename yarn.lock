@@ -30,20 +30,20 @@
     react-addons-create-fragment "^15.5.3"
     util-deprecate "^1.0.2"
 
-"@storybook/addon-knobs@^3.2.8":
-  version "3.2.8"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-3.2.8.tgz#eb4821409e62f2f886d7ae9333bcc95e4b0714eb"
+"@storybook/addon-knobs@^3.2.14":
+  version "3.2.14"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-3.2.14.tgz#2934275dfbe3f940d4be3732af1c8f2b80ee7639"
   dependencies:
-    "@storybook/addons" "^3.2.6"
-    babel-runtime "^6.23.0"
+    "@storybook/addons" "^3.2.14"
+    babel-runtime "^6.26.0"
     deep-equal "^1.0.1"
     global "^4.3.2"
     insert-css "^1.0.0"
     lodash.debounce "^4.0.8"
-    moment "^2.18.1"
-    prop-types "^15.5.10"
+    moment "^2.19.1"
+    prop-types "^15.6.0"
     react-color "^2.11.4"
-    react-datetime "^2.8.10"
+    react-datetime "^2.10.3"
     react-textarea-autosize "^4.3.0"
     util-deprecate "^1.0.2"
 
@@ -185,10 +185,6 @@
     react-split-pane "^0.1.65"
     react-treebeard "^2.0.3"
     redux "^3.6.0"
-
-"@types/react@>=15":
-  version "16.0.2"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.2.tgz#0b31a73cdde6272b719e5b05a7df6d1e2654a804"
 
 abab@^1.0.3:
   version "1.0.3"
@@ -2127,7 +2123,7 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-create-react-class@^15.5.2, create-react-class@^15.5.x, create-react-class@^15.6.0:
+create-react-class@^15.5.2, create-react-class@^15.6.0:
   version "15.6.0"
   resolved "https://registry.yarnpkg.com/create-react-class/-/create-react-class-15.6.0.tgz#ab448497c26566e1e29413e883207d57cfe7bed4"
   dependencies:
@@ -4782,9 +4778,9 @@ mobx@^2.3.4:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/mobx/-/mobx-2.7.0.tgz#cf3d82d18c0ca7f458d8f2a240817b3dc7e54a01"
 
-moment@^2.18.1:
-  version "2.18.1"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.18.1.tgz#c36193dd3ce1c2eed2adb7c802dbbc77a81b1c0f"
+moment@^2.19.1:
+  version "2.19.1"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.19.1.tgz#56da1a2d1cbf01d38b7e1afc31c10bcfa1929167"
 
 ms@2.0.0:
   version "2.0.0"
@@ -5827,14 +5823,14 @@ react-copy-to-clipboard@4.3.1:
     create-react-class "^15.5.2"
     prop-types "^15.5.8"
 
-react-datetime@^2.8.10:
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/react-datetime/-/react-datetime-2.9.0.tgz#9ec80060cbb8e5c5d8f98f0acebb6f4712ce449a"
+react-datetime@^2.10.3:
+  version "2.10.3"
+  resolved "https://registry.yarnpkg.com/react-datetime/-/react-datetime-2.10.3.tgz#9807a7d9be1dd4ee01b3466b0416614e3543378e"
   dependencies:
-    "@types/react" ">=15"
+    create-react-class "^15.5.2"
     object-assign "^3.0.0"
     prop-types "^15.5.7"
-    react-onclickoutside "^5.9.0"
+    react-onclickoutside "^6.5.0"
 
 react-docgen@^2.15.0:
   version "2.17.0"
@@ -5925,11 +5921,9 @@ react-modal@^2.2.4:
     prop-types "^15.5.10"
     react-dom-factories "^1.0.0"
 
-react-onclickoutside@^5.9.0:
-  version "5.11.1"
-  resolved "https://registry.yarnpkg.com/react-onclickoutside/-/react-onclickoutside-5.11.1.tgz#00314e52567cf55faba94cabbacd119619070623"
-  dependencies:
-    create-react-class "^15.5.x"
+react-onclickoutside@^6.5.0:
+  version "6.6.3"
+  resolved "https://registry.yarnpkg.com/react-onclickoutside/-/react-onclickoutside-6.6.3.tgz#f3b9226f4541039d6d5a4a6120c4dfffcf7de60c"
 
 react-remarkable@^1.1.2:
   version "1.1.3"
