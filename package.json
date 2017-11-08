@@ -55,7 +55,7 @@
     "jest": "^21.2.1",
     "lint-staged": "^4.3.0",
     "postcss-loader": "^2.0.6",
-    "prettier": "^1.7.4",
+    "prettier": "^1.8.1",
     "prettier-standard": "^6.0.0",
     "raw-loader": "^0.5.1",
     "react-dom": "^15.6.1",
