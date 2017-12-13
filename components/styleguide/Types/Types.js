@@ -1,15 +1,14 @@
 import React from 'react'
 import styled, { css } from 'react-emotion'
 import { ds, fontFamily } from '../../../theme'
+import vars from '../vars'
 
 const TypeItemWrapper = styled('div')`
-  margin-bottom: ${ds.spacing(3)};
-  padding: ${ds.spacing(1)};
-  background-color: ${props =>
-    props.bg === 'dark' ? `${ds.color('dark')}` : `${ds.color('bright')}`};
-  color: ${props =>
-    props.bg === 'dark' ? `${ds.color('bright')}` : `${ds.color('dark')}`};
-  font-family: ${ds.get('type.fontFamily.system')};
+  margin-bottom: ${vars.spacing[3]};
+  padding: ${vars.spacing[1]};
+  background-color: ${vars.colors.bright};
+  color: ${vars.colors.dark};
+  font-family: ${vars.type.fontFamily.base};
   overflow-x: auto;
 
   &:last-child {
@@ -24,21 +23,20 @@ const TypeItemTag = styled('div')`
   opacity: 0.6;
 `
 const TypeItemName = styled('div')`
-  font-size: 80px;
+  font-size: ${vars.type.sizes.l};
   font-family: ${({ font }) => font};
-  margin-bottom: ${ds.spacing(1)};
+  margin-bottom: 8px;
 `
 
 const TypeItemInfo = styled('div')`
-  font-size: 12px;
-  font-family: ${ds.get(`type.fontFamily.mono`)};
+  font-size: ${vars.type.sizes.s};
+  font-family: ${vars.type.fontFamily.mono};
 `
 
 /**
  * A single typography example
  */
 const TypeItem = props => {
-  console.log('props', props)
   return (
     <TypeItemWrapper bg={props.bg}>
       <TypeItemTag>{props.name}</TypeItemTag>
@@ -53,12 +51,10 @@ const TypeItem = props => {
  * Lists all the fonts specified in the `type.fontFamily` object
  */
 const TypesWrapper = styled('div')`
-  padding: ${ds.spacing(1)};
-  font-family: ${ds.get('type.fontFamily.system')};
-  background-color: ${props =>
-    props.bg === 'dark' ? `${ds.color('dark')}` : `${ds.color('bright')}`};
-  color: ${props =>
-    props.bg === 'dark' ? `${ds.color('bright')}` : `${ds.color('dark')}`};
+  padding: ${vars.spacing[1]};
+  font-family: ${vars.type.fontFamily.base};
+  background-color: ${vars.colors.bright};
+  color: ${vars.colors.dark};
 `
 
 /**

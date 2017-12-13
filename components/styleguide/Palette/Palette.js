@@ -2,6 +2,7 @@ import React from 'react'
 import { contrastRatio } from 'chromatism'
 import styled, { css } from 'react-emotion'
 import { ds } from '../../../theme'
+import vars from '../vars'
 const allColours = ds.get('colors.colorPalette');
 
 const PaletteItemWrapper = styled('div')`
@@ -13,17 +14,17 @@ const PaletteItemList = styled('div')`
   display: flex;
   justify-content: space-between;
   text-transform: capitalize;
-  font-family: ${ds.get('type.fontFamily.system')};
-  padding: ${props => props.base ? `2em 1.5em` : `1.5em`};
+  font-family: ${vars.type.fontFamily.base};
+  padding: ${props => props.base ? `${vars.spacing[3]} ${vars.spacing[2]}` : `${vars.spacing[2]}`};
   font-weight: ${props => props.base ? `bold` : `normal`};
   background: ${props => props.color};
   color: ${props => contrastRatio(props.color).hex};
 
   &:first-child {
-    border-radius: 10px 10px 0 0;
+    border-radius: ${vars.spacing[1]} ${vars.spacing[1]} 0 0;
   }
   &:last-child {
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 ${vars.spacing[1]} ${vars.spacing[1]};
   }
 `
 const PaletteItemInner = styled('div')`
@@ -48,8 +49,8 @@ const PaletteWrapper = styled('div')`
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(3, auto);
-  grid-column-gap: ${ds.spacing(2)};
-  grid-row-gap: ${ds.spacing(2)};
+  grid-column-gap: ${vars.spacing[2]};
+  grid-row-gap: ${vars.spacing[2]};
 `
 
 export const Palette = () => {
