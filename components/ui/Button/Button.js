@@ -21,15 +21,12 @@
  * Output: <a href="https://nimbletank.com">Foo Bar</a>
  *
  */
-import { css } from 'emotion'
-import styled from 'react-emotion'
+import React from 'react'
+import styled, { css } from 'react-emotion'
+import { ds } from '../../../theme'
 
-/**
- * Shared button styles
- */
-const ButtonCSS = (props) => css`
-  display: ${props.block ? 'block' : 'inline-block'};
-  width: ${props.block ? '100%' : 'auto'};
+const buttonCSS = css`
+  display: inline-block;
   vertical-align: middle;
   white-space: nowrap;
   font-family: inherit;
@@ -45,75 +42,75 @@ const ButtonCSS = (props) => css`
   padding-left: 1.5em;
   overflow: visible;
   text-align: center;
-  border-radius: 5px;
   user-select: none;
-  text-decoration: none;
-  transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1); /* Var */
+  border-radius: ${ds.get('borderRadius')};
+  font-weight: ${ds.get('type.fontWeight.bold')};
+
+  &,
+  &:link,
+  &:visited {
+    background-color: ${ds.color('primary')};
+    color: ${ds.color('bright')};
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: ${ds.color('primary', 'light')};
+  }
+
+  &,
+  &:hover,
+  &:active,
+  &:focus,
+  &:visited {
+    text-decoration: none;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
 
   &[disabled] {
     cursor: default;
     background-image: none;
-    opacity: .5;
-  }
-`
-
-/**
- * Default button
- */
-const ButtonStyles = css`
-  ${ButtonCSS};
-
-  &,
-  &:link,
-  &:visited {
-    background-color: #EDEDED; /* Var */
-    color: #444; /* Var */
-  }
-
-  &:hover,
-  &:active,
-  &:focus {
-    background-color: #D5D5D5; /* Var */
-    outline: none;
+    opacity: 0.5;
   }
 `
 
 export const Button = styled('button')`
-  ${ButtonCSS};
-  ${ButtonStyles};
+  ${buttonCSS};
 `
 
-export const ButtonLink = styled('a')`
-  ${ButtonCSS};
-  ${ButtonStyles};
+export const LinkButton = Button.withComponent('a')
+
+export const ButtonBlock = styled('button')`
+  ${buttonCSS};
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+
+  & + & {
+    margin-top: 10px;
+  }
 `
 
-/**
- * Primary button
- */
-const ButtonPrimaryStyles = css`
-  ${ButtonCSS};
+export const ButtonAlt = styled('button')`
+  ${buttonCSS};
 
   &,
   &:link,
   &:visited {
-    background-color: #3FC1C9; /* Var */
-    color: #fff; /* Var */
+    background-color: ${ds.color('secondary')};
   }
 
   &:hover,
   &:active,
   &:focus {
-    background-color: #2B8D93; /* Var */
+    background-color: ${ds.color('secondary', 'light')};
   }
 `
 
-export const ButtonPrimary = styled('button')`
-  ${ButtonCSS};
-  ${ButtonPrimaryStyles};
-`
-
-export const ButtonPrimaryLink = styled('a')`
-  ${ButtonCSS};
-  ${ButtonPrimaryStyles};
-`
+export const LinkButtonAlt = ButtonAlt.withComponent('a')
